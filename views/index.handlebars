@@ -1,42 +1,39 @@
-{{!-- <h1>Datenight!</h1>
-
-<main>
+<html>
+<head>
+    <title>index</title>
+   {{!-- <link rel="stylesheet" href="/assets/css/styles.css" content-type="application/css" /> --}}
+    
+</head>
+<body>
+<div class="welcome"> 
+    <h5>DateNight </h5>
+    <h7> Having a hard time picking the perfect date for you and your partner? 
+DateNight makes your decision easy!
+Just login below to get started. 
+</h7>
+</div>
 <div class="container">
-<div class="row">
-<div class = "col s6">
-{{#each dates}}
-{{!-- {{#unless this.save_date = false}} --}}
-{{!-- <div> --}}
-{{!-- <form action = "/dates/{{this.id}}?_method = PUT" method = "POST">
-<button type = "submit" id = "newDates"> {{this.date_name}} </button>
-</form> --}}
-{{!-- </div> --}}
-{{!-- {{/unless}} --}}
-{{!-- {{/each}} --}}
-{{!-- </div> --}} 
-<h2>Login to DateNight</h2>
-{{!-- <form class= "login-form" > --}}
-{{!-- action="/action_page.php"> --}}
-  <div class="imgcontainer">
-    {{!-- <img src="img_avatar2.png" alt="photo" class="avatar"> --}}
-  </div>
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" id="username" required>
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" id="psw" required>
-         <button class="Submit" id="submitName">Submit</button>
-    {{!-- <button id="submit-form" type="submit">Login</button> --}}
-   
-  </div>
- 
-{{!-- </form> --}}
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="./assets/js/index.js"></script>
-
-{{!-- <li>
-    {{name}}
-
-    <button class="Submit" href="/results"id="submitName">Submit</button>
-</li> --}}
+    <form class="create-user-form">
+        <h1> Create New User</h1>
+        <input type="email" placeholder="Email Address" id="create-user-email" required>
+        <input type="password" placeholder="Password" id="create-user-password" required>
+        <button type="submit" id="submit-create-user">Submit</button>
+    </form>
+    <div id="error1">
+        <p> </p>
+    </div>
+    <form class="sign-in-form">
+        <h1> Sign In</h1>
+        <input type="email" placeholder="Email Address" id="sign-in-email" required>
+        <input type="password" placeholder="Password" id="sign-in-password" required>
+        <button type="submit" id="button-sign-in"> Submit</button>
+    </form>
+    <div id="error2">
+        <p> </p>
+    </div>
+    <button type="button" id="sign-out">Sign Out</button>
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+<script content-type="application/javascript" src="./assets/js/index.js">"JSbeingloaded"</script>
+</body>
+</html>
