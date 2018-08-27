@@ -15,12 +15,11 @@
     "port": 3306,
     "dialect": "mysql"
   },
-  "production": {
-    "username": "root",
-    "password": "Metallica",
-    "database": "datenight_db",
-    "host": "127.0.0.1",
-    "port": 3306,
+ "production": {
+    "username": "joy42kp7q6frn6aw",
+    "password": "zmzx21ashloyj0a8",
+    "database": "u55i72w7jd2a193o",
+    "host": "d6vscs19jtah8iwb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
